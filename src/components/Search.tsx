@@ -26,7 +26,6 @@ const Search = () => {
       debounce(() => setValue(e.target.value), 1500)();
       // @ts-ignore
       const value = document.getElementById("search")?.value;
-      console.log("value", value);
       for (let person of searchedPeople) {
         if (value === person.name) {
           dispatch(setPerson(person));
